@@ -65,7 +65,7 @@ int main() {
             else 
                 cout << "Error: angle's value cannot be < 0 " << endl;
         }
-         // квадратный корень
+    
         else if (oper == 'r' || oper =='l') {
             cout << "Enter num1: ";
             cin >> num1;
