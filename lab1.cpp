@@ -13,7 +13,7 @@ int main() {
 
         if (oper == 'q') 
             break;
-        //обычные действия
+        
         if (oper == '+' || oper == '-' || oper == '*' || oper == '/' || oper == '^'  ) {
             cout << "Enter two numbers: ";
             cin >> num1 >> num2;
@@ -39,7 +39,6 @@ int main() {
                     cout << "Error: You cannot divide by 0. " << endl;
             }
         }
-         //тригонометрия
         else if (oper == '1' || oper == '2' || oper == '3' || oper == '4') {
             cout << "Enter angle in degrees: ";
             cin >> angleDeg;
@@ -51,7 +50,7 @@ int main() {
             cin >> angleDeg;
             }
             if (angleDeg >=0){
-                double angleRad = angleDeg * M_PI / 180.0; // из градусов в радианы
+                double angleRad = angleDeg * M_PI / 180.0; 
          
                 if (oper == '1') 
                     cout << "sin(" << angleRad << ")" << " = " << sin(angleRad) << endl;
